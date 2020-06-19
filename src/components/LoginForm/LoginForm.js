@@ -10,7 +10,8 @@ export default class LoginForm extends Component {
 
   state = { error: null }
 
-  handleSumbitJwtAuth = ev => {
+  handleSubmitJwtAuth = ev => {
+    console.log('hi')
     ev.preventDefault()
     this.setState({ error: null })
     const { user_name, password } = ev.target
@@ -32,6 +33,7 @@ export default class LoginForm extends Component {
 
   render() {
     const { error } = this.state
+    console.log('hello')
     return (
       <form
         className='LoginForm'
